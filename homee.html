@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Mentorship Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #fffbf1, #f8ede3);
+            overflow-x: hidden;
+        }
+        .glass-navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .glass-navbar h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #1c1c1c;
+        }
+        .glass-navbar nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .glass-navbar nav ul li {
+            margin: 0 15px;
+        }
+        .glass-navbar nav ul li a {
+            text-decoration: none;
+            color: #1c1c1c;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .glass-navbar nav ul li a:hover {
+            color: #ff9800;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 150px 20px 100px;
+            background: url('https://source.unsplash.com/1600x900/?art,creativity') no-repeat center center/cover;
+            height: 90vh;
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #ff9800;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #e67e22;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .floating-donate {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        .floating-donate:hover {
+            background-color: #e67e22;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #f8ede3;
+            padding: 50px 20px;
+        }
+        .stats .stat {
+            margin: 20px;
+            text-align: center;
+        }
+        .stats .stat h4 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .stats .stat p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .testimonials {
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            padding: 50px 20px;
+        }
+        .testimonials h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            margin: 20px auto;
+            max-width: 700px;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial .author {
+            font-weight: bold;
+        }
+        footer {
+            background-color: #1c1c1c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-navbar">
+        <h1>CMH</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    
+        <section class="hero" style="background-image: url('https://source.unsplash.com/1600x900/?art,creativity');">
+        <h2>Empowering Creativity, One Artist at a Time</h2>
+        <p>Join our mission to nurture and inspire the next generation of creative minds.</p>
+        <button>Learn More</button>
+    </section>
+
+    <section id="about" class="section">
+        <h3>About CMH</h3>
+        <p>Creative Mentorship Hub (CMH) is dedicated to fostering artistic growth and creativity through mentorship programs, workshops, and community events. Our mission is to empower artists of all backgrounds to achieve their full potential.</p>
+    </section>
+
+    <section class="stats">
+        <div class="stat">
+            <h4>500+</h4>
+            <p>Artists Mentored</p>
+        </div>
+        <div class="stat">
+            <h4>120+</h4>
+            <p>Workshops Conducted</p>
+        </div>
+        <div class="stat">
+            <h4>30+</h4>
+            <p>Community Events</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h3>Our Gallery</h3>
+        <div class="gallery">
+            <img src="https://source.unsplash.com/300x200/?art" alt="Artwork 1">
+            <img src="https://source.unsplash.com/300x200/?painting" alt="Artwork 2">
+            <img src="https://source.unsplash.com/300x200/?sculpture" alt="Artwork 3">
+            <img src="https://source.unsplash.com/300x200/?design" alt="Artwork 4">
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h3>What People Say</h3>
+        <div class="testimonial">
+            <p>"CMH changed my life by connecting me with mentors who truly care about my growth as an artist."</p>
+            <p class="author">- Alex Morgan</p>
+        </div>
+        <div class="testimonial">
+            <p>"The workshops are top-notch and gave me the confidence to pursue my passion for painting."</p>
+            <p class="author">- Jamie Lee</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h3>Contact Us</h3>
+        <p>Have questions? Want to get involved? Reach out to us at <strong>info@cmh.org</strong> or call <strong>+123 456 7890</strong>.</p>
+    </section>
+
+    <a href="#" class="floating-donate">Donate Now</a>
+
+    <footer>
+        <p>&copy; 2024 Creative Mentorship Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
